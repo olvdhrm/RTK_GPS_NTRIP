@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>fix2nmea</name>
+  <version>0.0.0</version>
+  <description>ROS2 executable to parse /fix type message containing Lat Lon to /nmea type message required by NTRIP Client.</description>
+  <maintainer email="olivia.dharmadi@outlook.com">olivia</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  
+  <depend>rclcpp</depend>
+  <depend>nmea_msgs</depend>
+  <depend>sensor_msgs</depend>
+  <depend>ublox_msgs</depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
